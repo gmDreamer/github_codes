@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="customMenu" destination="t79-pV-pox" id="4m1-Xr-YBY"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="t79-pV-pox">
+            <items>
+                <menuItem title="关于" id="KhF-KW-zvc">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="orderFrontStandardAboutPanel:" target="-1" id="5ez-1P-gwb"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="OLt-Cv-TWj"/>
+                <menuItem title="截图" keyEquivalent="a" id="HzO-wV-48a">
+                    <connections>
+                        <action selector="onStart:" target="Voe-Tx-rLC" id="Ooj-Cc-nvs"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="yfa-yk-hXy"/>
+                <menuItem title="退出" keyEquivalent="q" id="aoU-TZ-ylN">
+                    <connections>
+                        <action selector="terminate:" target="-1" id="LPs-Jf-vfn"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="194" y="286.5"/>
+        </menu>
+    </objects>
+</document>

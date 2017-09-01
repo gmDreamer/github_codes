@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BottomTooolViewController">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="640" height="167"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tj7-eJ-cWm">
+                    <rect key="frame" x="22" y="131" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="qFT-3e-qFE"/>
+                        <constraint firstAttribute="height" constant="24" id="xxz-Jf-OcR"/>
+                    </constraints>
+                    <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="toolbar_emoticon_normal" imagePosition="overlaps" imageScaling="proportionallyDown" inset="2" id="krV-Ej-Kdk">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5M2-E7-QcY">
+                    <rect key="frame" x="68" y="131" width="22" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="cuO-BE-LAb"/>
+                        <constraint firstAttribute="width" constant="22" id="mRX-Ic-1zv"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="toolbar_screenCapture_normal" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="5lj-Pb-AVa">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xs4-E9-Ydw">
+                    <rect key="frame" x="112" y="131" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="C19-8z-gSM"/>
+                        <constraint firstAttribute="height" constant="24" id="hqO-Ik-VRP"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="toolbar_files_normal" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="BNg-hl-hRu">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-nf-toH">
+                    <rect key="frame" x="158" y="131" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="8X3-Sq-stL"/>
+                        <constraint firstAttribute="width" constant="24" id="XM1-BQ-iF9"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="zWq-xP-GHU">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rrK-hX-3bs">
+                    <rect key="frame" x="204" y="131" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="ODo-6S-3Rs"/>
+                        <constraint firstAttribute="height" constant="24" id="b4V-PA-MoV"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="toolbar_history_normal" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="lad-Hg-o3r">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="yhm-nf-toH" firstAttribute="leading" secondItem="Xs4-E9-Ydw" secondAttribute="trailing" constant="22" id="32I-XV-IGQ"/>
+                <constraint firstItem="rrK-hX-3bs" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="12" id="44F-WD-Lj9"/>
+                <constraint firstItem="5M2-E7-QcY" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="12" id="8VD-Fg-znY"/>
+                <constraint firstItem="yhm-nf-toH" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="12" id="Bh9-Ap-QTZ"/>
+                <constraint firstItem="5M2-E7-QcY" firstAttribute="leading" secondItem="Tj7-eJ-cWm" secondAttribute="trailing" constant="22" id="D18-Ak-UvX"/>
+                <constraint firstItem="Tj7-eJ-cWm" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="12" id="JIj-uy-XUN"/>
+                <constraint firstItem="rrK-hX-3bs" firstAttribute="leading" secondItem="yhm-nf-toH" secondAttribute="trailing" constant="22" id="L2R-dU-mr8"/>
+                <constraint firstItem="Xs4-E9-Ydw" firstAttribute="leading" secondItem="5M2-E7-QcY" secondAttribute="trailing" constant="22" id="Mcl-st-CqN"/>
+                <constraint firstItem="Tj7-eJ-cWm" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="22" id="f9y-Wt-EeI"/>
+                <constraint firstItem="Xs4-E9-Ydw" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="12" id="w2a-Kz-4ES"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="toolbar_emoticon_normal" width="24" height="24"/>
+        <image name="toolbar_files_normal" width="24" height="24"/>
+        <image name="toolbar_history_normal" width="24" height="24"/>
+        <image name="toolbar_screenCapture_normal" width="24" height="24"/>
+    </resources>
+</document>

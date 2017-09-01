@@ -90,7 +90,7 @@
             startingLineNumber = "236"
             endingLineNumber = "236"
             landmarkName = "-mMoveDecoder:onNewVideoFrameReady:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

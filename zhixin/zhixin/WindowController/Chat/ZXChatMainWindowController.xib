@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ZXChatMainWindowController">
+            <connections>
+                <outlet property="leftView" destination="ONa-Ty-Yas" id="6v5-k0-Jtf"/>
+                <outlet property="rightView" destination="M9J-Bf-l4c" id="P1B-nx-7Qk"/>
+                <outlet property="searchField" destination="h4n-rY-xkb" id="9YZ-Z7-thg"/>
+                <outlet property="topToolbar" destination="zOL-0C-eIJ" id="AKU-oZ-I9W"/>
+                <outlet property="window" destination="SY4-DG-YNH" id="SVS-ui-xYD"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="" animationBehavior="default" id="SY4-DG-YNH" customClass="ZXDragWindow">
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="109" y="131" width="785" height="640"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <value key="minSize" type="size" width="785" height="640"/>
+            <value key="maxFullScreenContentSize" type="size" width="785" height="1000"/>
+            <view key="contentView" id="fUc-8m-hAs" customClass="ZCCustomView">
+                <rect key="frame" x="0.0" y="0.0" width="785" height="640"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView misplaced="YES" id="zOL-0C-eIJ" customClass="ZXTopToolbar">
+                        <rect key="frame" x="0.0" y="586" width="785" height="54"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" id="rRI-2j-Vtd">
+                                <rect key="frame" x="365" y="-1" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="menu-contact-normal" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="Ye5-sh-iFp">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" id="LnJ-dT-log">
+                                <rect key="frame" x="309" y="-1" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="menu-message-normal" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="E1k-zm-fBl">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <searchField wantsLayer="YES" verticalHuggingPriority="750" misplaced="YES" id="h4n-rY-xkb" customClass="ZXSearchField">
+                                <rect key="frame" x="99" y="16" width="96" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" placeholderString=" " usesSingleLineMode="YES" id="mbA-7Y-ptO" customClass="ZXSearchFieldCell">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </searchFieldCell>
+                            </searchField>
+                        </subviews>
+                    </customView>
+                    <splitView misplaced="YES" dividerStyle="thin" vertical="YES" id="N7J-i7-Kkp">
+                        <rect key="frame" x="0.0" y="0.0" width="785" height="586"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <customView id="ONa-Ty-Yas">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="586"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </customView>
+                            <customView id="M9J-Bf-l4c">
+                                <rect key="frame" x="201" y="0.0" width="584" height="586"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </customView>
+                        </subviews>
+                        <holdingPriorities>
+                            <real value="1"/>
+                            <real value="1"/>
+                        </holdingPriorities>
+                        <connections>
+                            <outlet property="delegate" destination="-2" id="pIl-cG-jwM"/>
+                        </connections>
+                    </splitView>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="sra-Rv-7Z8"/>
+            </connections>
+            <point key="canvasLocation" x="-33.5" y="556"/>
+        </window>
+        <customFormatter id="JzT-d9-Pzl"/>
+    </objects>
+    <resources>
+        <image name="menu-contact-normal" width="28" height="28"/>
+        <image name="menu-message-normal" width="28" height="28"/>
+    </resources>
+</document>
